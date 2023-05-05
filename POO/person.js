@@ -27,13 +27,14 @@ class Persona {
 
 
 let teresa = new Persona("Teresa","de Miguel","Alberti",54,167);
-teresa.anyoNacimiento = 1997
-//console.log(teresa);
-console.log(teresa.calIMC());
-console.log(teresa.printAll());
+teresa.anyoNacimiento = 1997;
+// console.log(teresa);
+// console.log(teresa.calIMC());
+// console.log(teresa.printAll());
 
-teresa.hobbies = ["leer","hacer ejercicio","pasear perritos"];
-console.log(teresa.printHoobies())
+// teresa.hobbies = ["leer","hacer ejercicio","pasear perritos"];
+// console.log(teresa.printHoobies())
+
 module.exports = {Persona}
 
 
