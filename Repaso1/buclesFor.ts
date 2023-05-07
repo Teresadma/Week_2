@@ -7,7 +7,7 @@ function evenNumbers (n: number){
     }
     return vector
 }
-console.log(evenNumbers(10))
+// console.log(evenNumbers(10))
 
 function myRevert (myArr: number[]){
     let myArrRevertido: number [] = [];
@@ -16,7 +16,7 @@ function myRevert (myArr: number[]){
     }
     return myArrRevertido;
 }
-console.log(myRevert([1,2,3,4,5]))
+// console.log(myRevert([1,2,3,4,5]))
 
 function isRainbow (colors: string[]) {
     let colores: string[] = [];
@@ -29,10 +29,10 @@ function isRainbow (colors: string[]) {
     }
     return colores;
 }
-console.log(isRainbow(["azul","verde","rosa"]))
+// console.log(isRainbow(["azul","verde","rosa"]))
 
 
-function add (myWords: string[]) {
+export function add (myWords: string[]) {
     let suma:number = 0;
     for (let i = 0; i < myWords.length; i++){
         suma += myWords[i].length;
@@ -40,7 +40,7 @@ function add (myWords: string[]) {
     return suma
 }
 
-console.log(add(["hola","feo","caca"]))
+// console.log(add(["hola","feo","caca"]))
 
 
 
