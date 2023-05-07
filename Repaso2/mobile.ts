@@ -44,4 +44,7 @@ export class Mobile {
     public setPrice(newPrice:number){
         return this.price = newPrice;
     }
+    public printAll():string{
+        return `${"\n"}The characteristics of the mobile are: ${"\n"}- Name: ${this.name} ${"\n"}- Trademark: ${this.trademark}${"\n"}- Model: ${this.model}${"\n"}- Color: ${this.color}${"\n"}- Price: ${this.price}${"\n"}`
+    }
 }
