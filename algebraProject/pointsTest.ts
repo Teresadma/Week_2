@@ -1,6 +1,6 @@
 import {Points} from "./points";
 
-let puntos: Points = new Points (23,45)
+let puntos: Points = new Points (-23,45)
 // console.log(puntos.getX())
 // console.log(puntos.getY())
 // console.log(puntos.toString())
@@ -9,4 +9,5 @@ let puntos: Points = new Points (23,45)
 // console.log(puntos.toString())
 // console.log(puntos.distanceToOrigin())
 let puntos2: Points = new Points (47,64)
-console.log(puntos.calculateDistance(puntos2))
+// 
+console.log(puntos.calculateQuadrant())
