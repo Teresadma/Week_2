@@ -18,31 +18,31 @@ export class Book {
         return this.title;
     }
     public setTitle (newTitle:string){
-        return this.title = newTitle;
+        this.title = newTitle;
     }
     public getNpages (){
         return this.npages;
     }
     public setNpages (newNpages:number){
-        return this.npages = newNpages;
+        this.npages = newNpages;
     }
     public getIsbn (){
         return this.isbn;
     }
     public setIsbn (newIsbn:string){
-        return this.isbn = newIsbn;
+        this.isbn = newIsbn;
     }
     public getAuthor (){
         return this.author;
     }
     public setAuthor (newAuthor:string){
-        return this.author = newAuthor;
+        this.author = newAuthor;
     }
     public getEditorial (){
         return this.editorial;
     }
     public setEditorial (newEditorial:string){
-        return this.editorial = newEditorial;
+        this.editorial = newEditorial;
     }
     public toString(): string {
         

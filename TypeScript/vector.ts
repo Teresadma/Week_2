@@ -10,35 +10,34 @@ export class Vector {
     }
     //METODOS
     public print(){
-        return this.elements
+        console.log(this.elements)
     }
-    public add (v1:number[]):number[]{
-        let suma: number[] = [];
+    public add (v1:Vector):Vector{
+        let suma: Vector = new Vector(this.elements.length,0);
         for (let i = 0; i < this.elements.length; i++){        
-            suma.push(this.elements[i]+v1[i])        
+            suma.elements[i] = this.elements[i]+v1.elements[i];      
         } 
-        return suma;
+        return suma
     }
-    public subs (v1: number[]): number[]{
-        let resta: number[] = [];
+    public subs (v1: Vector): Vector{
+        let resta: Vector = new Vector (this.elements.length,0) ;
         for (let i = 0; i < this.elements.length; i++){        
-            resta.push(this.elements[i]-v1[i])        
+            resta.elements[i] = this.elements[i]-v1.elements[i];        
         } 
         return resta;
     }
-    mult(v1:number[]):number[]{
-        let multiplicacion:number[] = [];
+    mult(v1:Vector):Vector{
+        let multiplicacion: Vector = new Vector (this.elements.length,0);
         for (let i = 0; i < this.elements.length; i++){        
-            multiplicacion.push(this.elements[i]*v1[i])        
+            multiplicacion.elements[i] = this.elements[i]*v1.elements[i]        
         }
         return multiplicacion;
     }
-    multNumber(n:number):number[]{
-        let multNumber: number[] = [];
+    multNumber(n: number):Vector{
+        let multNumber: Vector = new Vector (this.elements.length,0);
         for (let i = 0; i < this.elements.length; i++){        
-            multNumber.push(n*this.elements[i])        
+            multNumber.elements[i] = n*this.elements[i];      
         } 
         return multNumber;
     }
-
 }

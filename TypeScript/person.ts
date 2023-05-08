@@ -10,14 +10,14 @@ export class Person {
         this.address = address;
     }
     //METODOS
-    public printName(): string{
-        return this.name;
+    public printName(){
+        console.log(this.name);
     }
     public yearOfBirth (currentYear: number) {
         return currentYear - this.age;
     }
     public setAdrress(addressNueva:string){
-        return this.address = addressNueva;
+        this.address = addressNueva;
     }
     public getAddress():string{
         return this.address
