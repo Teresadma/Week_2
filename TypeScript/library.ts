@@ -11,23 +11,23 @@ export class Library {
         this.manager = manager;
     }
     //METODOS
-    public getBooks(){
+    public getBooks(): Book[] {
         return this.books;
     }
     public setBooks(NewBook: Book[]){
-        return this.books = NewBook;
+        this.books = NewBook;
     }
-    public getAddress(){
+    public getAddress(): string{
         return this.address;
     }
     public setAddress(NewAddress: string){
-        return this.address = NewAddress;
+        this.address = NewAddress;
     }
-    public getManager(){
+    public getManager(): string{
         return this.manager;
     }
     public setManager(NewManager: string){
-        return this.manager = NewManager;
+        this.manager = NewManager;
     }
     public toString(): string{
         let nLibro:string = "";

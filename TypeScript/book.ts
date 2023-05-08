@@ -14,35 +14,35 @@ export class Book {
         this.editorial = editorial;
     }
     //METODOS
-    public getTitle (){
+    public getTitle (): string{
         return this.title;
     }
     public setTitle (newTitle:string){
-        return this.title = newTitle;
+        this.title = newTitle;
     }
-    public getNpages (){
+    public getNpages (): number{
         return this.npages;
     }
     public setNpages (newNpages:number){
-        return this.npages = newNpages;
+        this.npages = newNpages;
     }
-    public getIsbn (){
+    public getIsbn (): string{
         return this.isbn;
     }
     public setIsbn (newIsbn:string){
-        return this.isbn = newIsbn;
+        this.isbn = newIsbn;
     }
-    public getAuthor (){
+    public getAuthor (): string{
         return this.author;
     }
     public setAuthor (newAuthor:string){
-        return this.author = newAuthor;
+        this.author = newAuthor;
     }
-    public getEditorial (){
+    public getEditorial (): string{
         return this.editorial;
     }
     public setEditorial (newEditorial:string){
-        return this.editorial = newEditorial;
+        this.editorial = newEditorial;
     }
     public toString(): string {
         
