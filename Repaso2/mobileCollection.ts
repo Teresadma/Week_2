@@ -2,24 +2,24 @@ import {Mobile} from "./mobile";
 
 export class MobileCollection {
     //ATRIBUTOS
-    private mobiles: object[];
+    private mobiles: Mobile[];
     private totalPrice: number;
     //CONSTRUCTOR
-    constructor (mobiles: object[]){
+    constructor (mobiles: Mobile[]){
         this.mobiles = mobiles;
         this.totalPrice;
     }
     //MÉTODOS
-    public getMobiles(){
+    public getMobiles(): Mobile[]{
         return this.mobiles;
     }
-    public setMobiles(newMobiles: object[]){
-        return this.mobiles = newMobiles;
+    public setMobiles(newMobiles: Mobile[]): void{
+        this.mobiles = newMobiles;
     }
-    public getTotalPrice(){
+    public getTotalPrice():number{
         return this.totalPrice;
     }
-    public setTotalPrice(newTotalPrice:number){
-        return this.totalPrice = newTotalPrice;
+    public setTotalPrice(newTotalPrice:number): void{
+        this.totalPrice = newTotalPrice;
     }
 }
