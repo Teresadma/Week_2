@@ -38,5 +38,4 @@ export class MobileCollection {
         }
         return cabecera + moviles + "Price overall: " + this.totalPriceCalculation();
     }
-
 }
