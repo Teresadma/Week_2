@@ -9,4 +9,6 @@ let iPhone4: Mobile = new Mobile ("iPhone de Grego", "iPhone", "10", "Negro", 55
 
 let myMobiles: Mobile[] = [iPhone1,iPhone2,iPhone3,iPhone4];
 let collection:MobileCollection = new MobileCollection (myMobiles)
-console.log(collection)
+// console.log(collection)
+// console.log(collection.totalPriceCalculation())
+console.log(collection.printCollection())
