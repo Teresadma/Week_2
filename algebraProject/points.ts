@@ -23,6 +23,15 @@ export class Points {
     public toString(){
         return `(${this.x}, ${this.y})`
     }
+    public distanceToOrigin():number {
+        let distancia:number;
+        distancia = Math.sqrt((Math.pow(this.x,2)+(Math.pow(this.y,2))))
+        return distancia;
+    }
+    public calculateDistance(anotherPoint:Points):number{
+        let distancia:number;
+        distancia = Math.sqrt((Math.pow((this.x-anotherPoint.x),2)+(Math.pow((this.y-anotherPoint.y),2))))
+        return distancia;
+    }
+
 }
-let puntos: Points = new Points (23,45)
-console.log(puntos.toString())
