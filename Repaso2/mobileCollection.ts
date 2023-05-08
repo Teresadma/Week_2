@@ -22,4 +22,7 @@ export class MobileCollection {
     public setTotalPrice(newTotalPrice:number){
         return this.totalPrice = newTotalPrice;
     }
+    // private totalPriceCalculation(){
+    //     return `${Mobile.getPrice}`
+    // }
 }
