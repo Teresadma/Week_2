@@ -12,13 +12,13 @@ export class Points {
         return this.x;
     }
     public setX(newX: number){
-        return this.x = newX;
+        this.x = newX;
     }
         public getY(){
         return this.x;
     }
     public setY(newY: number){
-        return this.y = newY;
+        this.y = newY;
     }
     public toString(){
         return `(${this.x}, ${this.y})`
