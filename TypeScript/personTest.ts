@@ -4,4 +4,4 @@ console.log(pepe)
 console.log(pepe.yearOfBirth(2023));
 console.log(pepe.printName())
 console.log(pepe.getAddress())
-console.log(pepe.setAdrress("Bravo Murillo"));
+pepe.setAdrress("Bravo Murillo");

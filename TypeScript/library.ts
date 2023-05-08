@@ -11,19 +11,19 @@ export class Library {
         this.manager = manager;
     }
     //METODOS
-    public getBooks(){
+    public getBooks(): Book[] {
         return this.books;
     }
     public setBooks(NewBook: Book[]){
         this.books = NewBook;
     }
-    public getAddress(){
+    public getAddress(): string{
         return this.address;
     }
     public setAddress(NewAddress: string){
         this.address = NewAddress;
     }
-    public getManager(){
+    public getManager(): string{
         return this.manager;
     }
     public setManager(NewManager: string){

@@ -14,31 +14,31 @@ export class Book {
         this.editorial = editorial;
     }
     //METODOS
-    public getTitle (){
+    public getTitle (): string{
         return this.title;
     }
     public setTitle (newTitle:string){
         this.title = newTitle;
     }
-    public getNpages (){
+    public getNpages (): number{
         return this.npages;
     }
     public setNpages (newNpages:number){
         this.npages = newNpages;
     }
-    public getIsbn (){
+    public getIsbn (): string{
         return this.isbn;
     }
     public setIsbn (newIsbn:string){
         this.isbn = newIsbn;
     }
-    public getAuthor (){
+    public getAuthor (): string{
         return this.author;
     }
     public setAuthor (newAuthor:string){
         this.author = newAuthor;
     }
-    public getEditorial (){
+    public getEditorial (): string{
         return this.editorial;
     }
     public setEditorial (newEditorial:string){

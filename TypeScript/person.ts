@@ -13,7 +13,7 @@ export class Person {
     public printName(){
         console.log(this.name);
     }
-    public yearOfBirth (currentYear: number) {
+    public yearOfBirth (currentYear: number):number {
         return currentYear - this.age;
     }
     public setAdrress(addressNueva:string){
