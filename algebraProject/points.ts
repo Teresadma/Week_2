@@ -47,22 +47,22 @@ export class Points {
             return 4;
         }
     }
-    public calculateNearest(points: Points[]): Points{
-        let minDistance:number = 0;
-        let nearestPoint: Points;
-        if (points.length > 0){
-            minDistance = this.calculateDistance(points[0]);
-            nearestPoint = points[0];
-        }
-        let distance:number = 0;
-        for (let i=0; i < points.length; i++){
-            distance = this.calculateDistance(points[i]);
-            if (distance < minDistance){
-                minDistance = distance;
-                nearestPoint = points[i]
-            }
-        }
-        return nearestPoint;
+    // public calculateNearest(points: Points[]): Points{
+    //     let minDistance:number = 0;
+    //     let nearestPoint: Points;
+    //     if (points.length > 0){
+    //         minDistance = this.calculateDistance(points[0]);
+    //         nearestPoint = points[0];
+    //     }
+    //     let distance:number = 0;
+    //     for (let i=0; i < points.length; i++){
+    //         distance = this.calculateDistance(points[i]);
+    //         if (distance < minDistance){
+    //             minDistance = distance;
+    //             nearestPoint = points[i]
+    //         }
+    //     }
+    //     return nearestPoint;
     }
-}
+
 
