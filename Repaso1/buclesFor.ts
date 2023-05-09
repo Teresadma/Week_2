@@ -11,12 +11,12 @@ function evenNumbers (n: number){
 
 function myRevert (myArr: number[]){
     let myArrRevertido: number [] = [];
-    for (let i = myArr.length - 1; i >= 0; i--) {
-        myArrRevertido.push(myArr[i]);
+    for (let i = 0; i <= myArr.length; i++) {
+        myArrRevertido[i] = myArr[myArr.length - i];
     }
     return myArrRevertido;
 }
-console.log(myRevert([1,2,3,4,5]))
+// console.log(myRevert([1,2,3,4,5]))
 
 function isRainbow (colors: string[]) {
     let colores: string[] = [];
