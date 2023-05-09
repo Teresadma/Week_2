@@ -7,8 +7,8 @@ export class MobileCollection {
     //CONSTRUCTOR
     constructor (mobiles: Mobile[]){
         this.mobiles = mobiles;
-        this.totalPrice;
-        this.totalPriceCalculation;
+        this.totalPrice =  this.totalPriceCalculation();
+       ;
     }
     //MÉTODOS
     public getMobiles(): Mobile[]{
