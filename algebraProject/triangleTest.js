@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var points_1 = require("./points");
+var triangle_1 = require("./triangle");
+var vertex1 = new points_1.Points(45, 30);
+var vertex2 = new points_1.Points(20, 55);
+var vertex3 = new points_1.Points(75, 30);
+var equilatero = new triangle_1.Triangle(vertex1, vertex2, vertex3);
+console.log(equilatero);
+console.log(equilatero.calculateLengthSide());
