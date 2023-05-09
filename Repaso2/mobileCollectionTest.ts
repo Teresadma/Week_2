@@ -8,11 +8,17 @@ let iPhone3: Mobile = new Mobile ("iPhone de Leo", "iPhone", "12", "Negro", 650)
 let iPhone4: Mobile = new Mobile ("iPhone de Grego", "iPhone", "10", "Negro", 550)
 let iPhone5: Mobile = new Mobile ("iPhone de Lucía", "iPhone", "8", "Negro", 350)
 
-
-let myMobiles: object[] = [iPhone1,iPhone2,iPhone3,iPhone4];
-let myMobiles2: object[] = [iPhone2,iPhone5]
+let myMobiles: Mobile[] = [iPhone1,iPhone2,iPhone3,iPhone4];
+let myMobiles2: Mobile[] = [iPhone2,iPhone5]
 let collection:MobileCollection = new MobileCollection (myMobiles)
 console.log(collection.getMobiles())
 console.log(collection.setMobiles(myMobiles2))
 
 // console.log(collection)
+
+let myMobiles3: Mobile[] = [iPhone1,iPhone2,iPhone3,iPhone4];
+let collection2:MobileCollection = new MobileCollection (myMobiles3)
+// console.log(collection)
+// console.log(collection.totalPriceCalculation())
+console.log(collection2.printCollection())
+
