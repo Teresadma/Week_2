@@ -34,35 +34,36 @@ export class Points {
         return distancia;
     }
     //SI PONGO TIPO NUMBER ME DA ERROR PORQUE LOS RETURN ESTÁN DENTRO DEL IF
-    public calculateQuadrant(){
+    public calculateQuadrant(): number{
+        let respuesta:number = 0;
         if (this.x == 0 || this.y == 0){
-            return 0;
+            respuesta = 0;
         }else if (this.x >= 0 && this.y >= 0){
-            return 1;
+            respuesta = 1;
         }else if (this.x <= 0 && this.y >= 0){
-            return 2;
+            respuesta = 2;
         }else if (this.x <= 0 && this.y <= 0){
-            return 3;
+            respuesta = 3;
         }else if (this.x >= 0 && this.y <= 0){
-            return 4;
+            respuesta = 4;
         }
+        return respuesta;
     }
-    // public calculateNearest(points: Points[]): Points{
-    //     let minDistance:number = 0;
-    //     let nearestPoint: Points;
-    //     if (points.length > 0){
-    //         minDistance = this.calculateDistance(points[0]);
-    //         nearestPoint = points[0];
-    //     }
-    //     let distance:number = 0;
-    //     for (let i=0; i < points.length; i++){
-    //         distance = this.calculateDistance(points[i]);
-    //         if (distance < minDistance){
-    //             minDistance = distance;
-    //             nearestPoint = points[i]
-    //         }
-    //     }
-    //     return nearestPoint;
+    public calculateNearest(points: Points[]): Points{
+        let minDistance:number = 0;
+        let nearestPoint: Points = new Points (0,0);
+        // if (points.length > 0){
+        //     minDistance = this.calculateDistance(points[0]);
+        //     nearestPoint = points[0];
+        // }
+        let distance:number = 0;
+        for (let i=0; i < points.length; i++){
+            distance = this.calculateDistance(points[i]);
+            if (distance < minDistance){
+                minDistance = distance;
+                nearestPoint = points[i]
+            }
+        }
+        return nearestPoint;
     }
-
-
+}
