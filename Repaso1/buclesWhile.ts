@@ -13,11 +13,12 @@ function startWithM (myNames: string[]) {
     let i = 0;
     while (i < myNames.length && myNames[i].startsWith("M")){
         i++;
+        return true
     }
-    let condicion2 = i < myNames.length;
-    return condicion2;
+    // let condicion2 = i < myNames.length;
+    // return condicion2;
 }
-console.log(startWithM(["Lucía","María"]))
+console.log(startWithM(["Mucía","Laría"]))
 
 // let palabra: string[] = ["Pepito","Lucia"]
 // console.log(palabra[0][0].slice(0));
