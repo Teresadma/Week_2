@@ -11,7 +11,8 @@ var punto = new points_1.Points(2, 2);
 // console.log(puntos.distanceToOrigin())
 var punto2 = new points_1.Points(3, 12);
 var punto1 = new points_1.Points(4, 22);
-var puntosArr = [punto1, punto2];
+var punto3 = new points_1.Points(1, 1);
+var puntosArr = [punto1, punto2, punto3];
 // 
 console.log(punto.calculateQuadrant());
 console.log(punto.calculateNearest(puntosArr));

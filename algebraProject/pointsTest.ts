@@ -10,7 +10,8 @@ let punto: Points = new Points (2,2)
 // console.log(puntos.distanceToOrigin())
 let punto2: Points = new Points (3,12)
 let punto1: Points = new Points (4,22)
-let puntosArr: Points[] = [punto1,punto2]
+let punto3: Points = new Points (1,1)
+let puntosArr: Points[] = [punto1,punto2,punto3]
 // 
 console.log(punto.calculateQuadrant())
 
