@@ -33,7 +33,6 @@ var Points = /** @class */ (function () {
         distancia = Math.sqrt((Math.pow((this.x - anotherPoint.x), 2) + (Math.pow((this.y - anotherPoint.y), 2))));
         return distancia;
     };
-    //SI PONGO TIPO NUMBER ME DA ERROR PORQUE LOS RETURN ESTÁN DENTRO DEL IF
     Points.prototype.calculateQuadrant = function () {
         var respuesta = 0;
         if (this.x == 0 || this.y == 0) {
@@ -56,7 +55,7 @@ var Points = /** @class */ (function () {
     Points.prototype.calculateNearest = function (points) {
         var minDistance = 0;
         var nearestPoint = new Points(0, 0);
-        if (points.length > 0) {
+        if (points != null && points.length > 0) {
             minDistance = this.calculateDistance(points[0]);
             nearestPoint = points[0];
         }

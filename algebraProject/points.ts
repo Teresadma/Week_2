@@ -33,7 +33,6 @@ export class Points {
         distancia = Math.sqrt((Math.pow((this.x-anotherPoint.x),2)+(Math.pow((this.y-anotherPoint.y),2))))
         return distancia;
     }
-    //SI PONGO TIPO NUMBER ME DA ERROR PORQUE LOS RETURN ESTÁN DENTRO DEL IF
     public calculateQuadrant(): number{
         let respuesta:number = 0;
         if (this.x == 0 || this.y == 0){
@@ -52,10 +51,10 @@ export class Points {
     public calculateNearest(points: Points[]): Points{
         let minDistance:number = 0;
         let nearestPoint: Points = new Points (0,0);
-        // if (points.length > 0){
-        //     minDistance = this.calculateDistance(points[0]);
-        //     nearestPoint = points[0];
-        // }
+        if (points != null && points.length > 0){
+            minDistance = this.calculateDistance(points[0]);
+            nearestPoint = points[0];
+        }
         let distance:number = 0;
         for (let i=0; i < points.length; i++){
             distance = this.calculateDistance(points[i]);
@@ -67,3 +66,4 @@ export class Points {
         return nearestPoint;
     }
 }
+

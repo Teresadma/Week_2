@@ -1,6 +1,6 @@
 import {Points} from "./points";
 
-let puntos: Points = new Points (-23,45)
+let punto: Points = new Points (2,2)
 // console.log(puntos.getX())
 // console.log(puntos.getY())
 // console.log(puntos.toString())
@@ -8,9 +8,10 @@ let puntos: Points = new Points (-23,45)
 // console.log(puntos.setY(56))
 // console.log(puntos.toString())
 // console.log(puntos.distanceToOrigin())
-let puntos2: Points = new Points (1,1)
-let puntosArr: Points[] = [puntos,puntos2]
+let punto2: Points = new Points (3,12)
+let punto1: Points = new Points (4,22)
+let puntosArr: Points[] = [punto1,punto2]
 // 
-console.log(puntos.calculateQuadrant())
+console.log(punto.calculateQuadrant())
 
-console.log(puntos.calculateNearest(puntosArr))
+console.log(punto.calculateNearest(puntosArr))

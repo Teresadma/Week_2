@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var points_1 = require("./points");
-var puntos = new points_1.Points(-23, 45);
+var punto = new points_1.Points(2, 2);
 // console.log(puntos.getX())
 // console.log(puntos.getY())
 // console.log(puntos.toString())
@@ -9,8 +9,9 @@ var puntos = new points_1.Points(-23, 45);
 // console.log(puntos.setY(56))
 // console.log(puntos.toString())
 // console.log(puntos.distanceToOrigin())
-var puntos2 = new points_1.Points(1, 1);
-var puntosArr = [puntos, puntos2];
+var punto2 = new points_1.Points(3, 12);
+var punto1 = new points_1.Points(4, 22);
+var puntosArr = [punto1, punto2];
 // 
-console.log(puntos.calculateQuadrant());
-console.log(puntos.calculateNearest(puntosArr));
+console.log(punto.calculateQuadrant());
+console.log(punto.calculateNearest(puntosArr));
